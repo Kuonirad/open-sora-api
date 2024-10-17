@@ -18,7 +18,7 @@
 
 ---
 
-This repository contains a Python wrapper for the Open-Sora API, which allows you to generate videos using AI.
+This repository contains a Python wrapper for the Open-Sora API, which allows you to generate videos using AI. The current branch structure includes 'initial-setup' as the default branch and 'enhance-readme' for ongoing enhancements.
 
 ## 🌟 Features
 
