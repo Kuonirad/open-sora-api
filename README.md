@@ -1,4 +1,26 @@
-<h1 align="center">✨ Open-Sora API Wrapper ✨</h1>
+<style>
+  .section-title {
+    font-family: 'Roboto', sans-serif;
+    color: #3498db;
+  }
+  .highlight {
+    background-color: #f1c40f;
+    padding: 2px 5px;
+    border-radius: 3px;
+  }
+  .feature-section {
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  .code-box {
+    background-color: #f4f4f4;
+    padding: 10px;
+    border-radius: 5px;
+  }
+</style>
+
+<h1 align="center" style="font-family: 'Courier New', Courier, monospace; color: #4CAF50;">✨ Open-Sora API Wrapper   ✨</h1>
 
 <p align="center">
   <img src="https://via.placeholder.com/150" alt="Open-Sora Logo" width="150"/>
@@ -6,77 +28,108 @@
 
 <p align="center">
   <a href="https://github.com/Kuonirad/open-sora-api/actions">
-    <img src="https://img.shields.io/github/workflow/status/Kuonirad/open-sora-api/CI" alt="CI Status"/>
+    <img src="https://img.shields.io/github/actions/workflow/status/Kuonirad/open-sora-api/ci.yml?branch=enhance-readme" alt="CI Status"/>
   </a>
-  <a href="https://github.com/Kuonirad/open-sora-api/blob/main/LICENSE">
+  <a href="https://github.com/Kuonirad/open-sora-api/blob/enhance-readme/LICENSE">
     <img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License"/>
   </a>
   <a href="https://github.com/Kuonirad/open-sora-api/pulls">
     <img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" alt="PRs Welcome"/>
   </a>
+  <a href="https://img.shields.io/badge/python-3.8%2B-blue.svg">
+    <img src="https://img.shields.io/badge/python-3.8%2B-blue.svg" alt="Python Version"/>
+  </a>
+  <a href="https://github.com/Kuonirad/open-sora-api/stargazers">
+    <img src="https://img.shields.io/github/stars/Kuonirad/open-sora-api.svg" alt="GitHub stars"/>
+  </a>
 </p>
 
 ---
 
-This repository contains a Python wrapper for the Open-Sora API, which allows you to generate videos using AI. The current branch structure includes 'initial-setup' as the default branch and 'enhance-readme' for ongoing enhancements.
-
-## 🌟 Features
-
-- 🎨 Easy-to-use Python interface for the Open-Sora API
-- 🎥 Customizable video generation parameters
-- 🛡️ Error handling and logging
-- 🔄 Rate limiting and retries
-
-## 📥 Installation
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/Kuonirad/open-sora-api.git
-   cd open-sora-api
-   ```
-
-2. Create a virtual environment and activate it:
-   ```bash
-   python3 -m venv venv
-   source venv/bin/activate
-   ```
-
-3. Install the required dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-## 🚀 Usage
-
-1. Set up your environment variables by creating a `.env` file in the project root:
-   ```
-   MODELSLAB_API_KEY=your_api_key_here
-   ```
-
-2. Use the OpenSoraAPI class in your Python code:
-   ```python
-   from open_sora import OpenSoraAPI
-
-   api = OpenSoraAPI()
-   result = api.generate_video("A beautiful sunset over the ocean")
-   print(result)
-   ```
-
-## 📚 API Reference
-
-- `OpenSoraAPI(api_key=None)`: Initializes the API wrapper. If `api_key` is not provided, it will be loaded from the `MODELSLAB_API_KEY` environment variable.
-- `generate_video(prompt, negative_prompt="", width=512, height=512, num_inference_steps=50, guidance_scale=7.5)`: Generates a video based on the provided parameters.
-
-## 🤝 Contributing
-
-We welcome contributions! Please see the [CONTRIBUTING.md](CONTRIBUTING.md) file for guidelines.
-
-## 📜 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+## 📑 Table of Contents
+- [Features](#-features)
+- [Installation](#-installation)
+- [Usage](#-usage)
+- [API Reference](#-api-reference)
+- [Contributing](#-contributing)
+- [License](#-license)
+- [Getting Help](#-getting-help)
 
 ---
 
-<p align="center">
+<p style="font-family: 'Arial', sans-serif; font-size: 1.1em; color: #333;">
+This repository contains a Python wrapper for the Open-Sora API, which allows you to generate videos using AI. The current branch structure includes 'enhance-readme' for ongoing enhancements.
+</p>
+
+<p style="font-family: 'Arial', sans-serif; font-size: 1.1em; color: #333;">
+<span class="highlight">Project Status:</span> This project is in active development, functional but continuously improving. Contributions and feedback are welcome!
+</p>
+
+<div class="feature-section">
+  <h2 class="section-title">🌟 Features</h2>
+  <ul>
+    <li>🎨 Easy-to-use Python interface for the Open-Sora API</li>
+    <li>🎥 Customizable video generation parameters</li>
+    <li>🛡️ Error handling and logging</li>
+    <li>🔄 Rate limiting and retries</li>
+  </ul>
+</div>
+
+<h2 class="section-title">📥 Installation</h2>
+
+<div class="code-box">
+  <ol>
+    <li>Clone the repository:
+      <pre><code>git clone https://github.com/Kuonirad/open-sora-api.git
+cd open-sora-api</code></pre>
+    </li>
+    <li>Create a virtual environment and activate it:
+      <pre><code>python3 -m venv venv
+source venv/bin/activate</code></pre>
+    </li>
+    <li>Install the required dependencies:
+      <pre><code>pip install -r requirements.txt</code></pre>
+    </li>
+  </ol>
+  <p>Visit the <a href="https://github.com/Kuonirad/open-sora-api">GitHub repository</a> for the latest version and to contribute.</p>
+</div>
+
+<h2 class="section-title">🚀 Usage</h2>
+
+<div class="code-box">
+  <ol>
+    <li>Set up your environment variables by creating a <span class="highlight">.env</span> file in the project root:
+      <pre><code>MODELSLAB_API_KEY=your_api_key_here</code></pre>
+    </li>
+    <li>Use the OpenSoraAPI class in your Python code:
+      <pre><code>from open_sora import OpenSoraAPI
+
+api = OpenSoraAPI()
+result = api.generate_video("A beautiful sunset over the ocean")
+print(result)</code></pre>
+    </li>
+  </ol>
+</div>
+
+<h2 class="section-title">📚 API Reference</h2>
+
+- <span class="highlight">OpenSoraAPI(api_key=None)</span>: Initializes the API wrapper. If <span class="highlight">api_key</span> is not provided, it will be loaded from the <span class="highlight">MODELSLAB_API_KEY</span> environment variable.
+- <span class="highlight">generate_video(prompt, negative_prompt="", width=512, height=512, num_inference_steps=50, guidance_scale=7.5)</span>: Generates a video based on the provided parameters.
+
+<h2 class="section-title">🤝 Contributing</h2>
+
+<p>We welcome contributions! Please see the <a href="CONTRIBUTING.md">CONTRIBUTING.md</a> file for guidelines.</p>
+
+<h2 class="section-title">📜 License</h2>
+
+<p>This project is licensed under the MIT License - see the <a href="LICENSE">LICENSE</a> file for details.</p>
+
+<h2 class="section-title">🆘 Getting Help</h2>
+
+<p>If you encounter any issues or have questions, please open an issue on GitHub or contact the maintainers.</p>
+
+---
+
+<p align="center" style="font-family: 'Comic Sans MS', cursive, sans-serif; font-size: 1.2em; color: #FF5733;">
   Made with ❤️ by the Open-Sora Team
 </p>
