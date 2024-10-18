@@ -1,23 +1,8 @@
 <style>
-  .section-title {
-    font-family: 'Roboto', sans-serif;
-    color: #3498db;
-  }
-  .highlight {
-    background-color: #f1c40f;
-    padding: 2px 5px;
-    border-radius: 3px;
-  }
-  .feature-section {
-    background-color: #f9f9f9;
-    padding: 10px;
-    border-radius: 5px;
-  }
-  .code-box {
-    background-color: #f4f4f4;
-    padding: 10px;
-    border-radius: 5px;
-  }
+.section-title { font-family: 'Roboto', sans-serif; color: #3498db; }
+.highlight { background-color: #f1c40f; padding: 2px 5px; border-radius: 3px; }
+.feature-section { background-color: #f9f9f9; padding: 10px; border-radius: 5px; }
+.code-box { background-color: #f4f4f4; padding: 10px; border-radius: 5px; }
 </style>
 
 <h1 align="center" style="font-family: 'Courier New', Courier, monospace; color: #4CAF50;">✨ Open-Sora API Wrapper    ✨</h1>
@@ -117,8 +102,8 @@ print(result)</code></pre>
 
 <h2 class="section-title">📚 API Reference</h2>
 
-- <span class="highlight">OpenSoraAPI(api_key=None)</span>: Initializes the API wrapper. If <span class="highlight">api_key</span> is not provided, it will be loaded from the <span class="highlight">MODELSLAB_API_KEY</span> environment variable.
-- <span class="highlight">generate_video(prompt, negative_prompt="", width=512, height=512, num_inference_steps=50, guidance_scale=7.5)</span>: Generates a video based on the provided parameters.
+- OpenSoraAPI(api_key=None): Initializes the API wrapper. If api_key is not provided, it will be loaded from the MODELSLAB_API_KEY environment variable.
+- generate_video(prompt, negative_prompt="", width=512, height=512, num_inference_steps=50, guidance_scale=7.5): Generates a video based on the provided parameters.
 
 <p>For more detailed API documentation, please refer to the <a href="https://modelslab.com/api/v6/video/open_sora/docs">Open-Sora API Documentation</a>.</p>
 
